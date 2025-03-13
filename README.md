@@ -45,11 +45,3 @@ This project is an **AI-powered web application** that detects plant diseases fr
 ## 🏆 Contributing
 
 Feel free to contribute! Open an issue or submit a pull request.
-
-## 📜 License
-
-This project is licensed under the **MIT License**.
-
----
-
-Would you like any modifications, like adding screenshots or a demo link? 🚀
