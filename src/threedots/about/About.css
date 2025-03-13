@@ -1,0 +1,49 @@
+.about-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.app-description {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.features-list {
+  font-size: 16px;
+  color: #444;
+  text-align: left;
+  display: inline-block;
+  margin: 0 auto 20px;
+}
+
+.credits {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.credit-image {
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.credits p {
+  font-size: 16px;
+  color: #333;
+}
+
+.credits a {
+  color: #4CAF50;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.credits a:hover {
+  text-decoration: underline;
+}

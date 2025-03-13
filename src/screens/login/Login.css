@@ -1,0 +1,82 @@
+/* Container Styling */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f8ff;
+}
+
+/* Fixed Styling for Login Page */
+.login-container.fixed {
+  position: fixed; /* Make the container fixed */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* Title and Subtitle Styling */
+.login-title {
+  font-size: 36px;
+  margin-bottom: 10px; /* Reduced space above the title */
+  color: #4caf50;
+}
+
+.login-subtitle {
+  font-size: 24px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Form Styling */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.input-field {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.submit-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 10px 0;
+}
+
+.skip-button {
+  background-color: transparent;
+  color: #4caf50;
+  border: 1px solid #4caf50;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.toggle-button {
+  margin-top: 15px;
+  background-color: transparent;
+  color: #4caf50;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.success-message {
+    color: green; /* Change the color as per your design */
+    margin-top: 10px;
+  }
+  

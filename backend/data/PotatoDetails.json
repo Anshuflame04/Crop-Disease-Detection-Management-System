@@ -1,0 +1,26 @@
+{
+    "Potato___Early_blight": {
+        "name": "Potato Early Blight",
+        "cause": "Fungal disease caused by Alternaria solani.",
+        "prevention": "Use resistant varieties, remove infected plants, and apply fungicides.",
+        "medicines": "Chlorothalonil, Mancozeb.",
+        "organic_pesticides": "Neem oil, Bordeaux mixture, Copper sulfate.",
+        "natural_fertilizers": "Compost, Vermicompost, Mycorrhizal bio-fertilizers."
+    },
+    "Potato___Healthy": {
+        "name": "Healthy Potato",
+        "cause": "No disease.",
+        "prevention": "N/A",
+        "medicines": "N/A",
+        "organic_pesticides": "N/A",
+        "natural_fertilizers": "Compost, Cow dung manure, Bio-fertilizers."
+    },
+    "Potato___Late_blight": {
+        "name": "Potato Late Blight",
+        "cause": "Fungal disease caused by Phytophthora infestans.",
+        "prevention": "Use resistant varieties, manage moisture, and apply fungicides.",
+        "medicines": "Metalaxyl, Mancozeb.",
+        "organic_pesticides": "Neem oil, Bordeaux mixture, Garlic extract.",
+        "natural_fertilizers": "Vermicompost, Bone meal, Phosphate-solubilizing bacteria."
+    }
+}

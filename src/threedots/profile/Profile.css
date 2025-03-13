@@ -1,0 +1,256 @@
+/* src/Profile.css */
+
+.user-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+  padding: 20px;
+  background-color: #f5f7fa; /* Light background */
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  width: 90%;
+  max-width: 400px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative; /* For centering on larger screens */
+  top: 50%; /* Centering */
+  transform: translateY(-50%); /* Centering */
+}
+
+@media (min-width: 768px) {
+  .user-profile {
+    position: absolute; /* Make it absolute on larger screens for centering */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centering */
+  }
+}
+
+.profile-image-container {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e0e0e0; /* Placeholder background color */
+  margin-bottom: 15px;
+  border: 3px solid #4caf50; /* Green border around the profile picture */
+  position: relative; /* For positioning the camera icon */
+}
+
+.profile-image {
+  width: 100%; /* Ensures the image covers the container */
+  height: 100%; /* Ensures the image covers the container */
+  object-fit: cover; /* Makes sure the image fits within the container */
+  border-radius: 50%; /* Rounded image */
+}
+
+.camera-icon {
+  position: absolute;
+  bottom: 5px; /* Position it inside the circle */
+  right: 5px; /* Align it to the right */
+  width: 30px; /* Icon size */
+  height: 30px; /* Icon size */
+  background-color: black; /* Black background */
+  border-radius: 50%; /* Circular icon */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer; /* Change cursor on hover */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for icon */
+}
+
+.camera-icon:hover {
+  background-color: #333; /* Darker on hover */
+}
+
+.image-input {
+  margin-bottom: 10px; /* Space below the image input */
+  display: none; /* Hide the default file input */
+}
+
+/* Add a custom button for the file input */
+.image-input-label {
+  display: inline-block;
+  background-color: #4caf50; /* Green button */
+  color: white;
+  border-radius: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.image-input-label:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+h2 {
+  margin: 10px 0;
+  font-size: 24px;
+  color: #333;
+  font-weight: 600;
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.profile-detail {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.profile-detail label {
+  font-size: 12px;
+  color: #555;
+  width: 30%;
+  text-align: right;
+  margin-right: 10px;
+}
+
+.profile-detail input {
+  padding: 5px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  transition: border-color 0.2s;
+  width: 65%;
+  height: 30px;
+}
+
+.profile-detail input:focus {
+  outline: none;
+  border-color: #4caf50; /* Highlight color */
+  box-shadow: 0px 0px 5px rgba(76, 175, 80, 0.4); /* Glow effect */
+}
+
+.edit-button,
+.save-button {
+  background-color: #4caf50; /* Green button */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px; /* Adjusted button size for better touch targets */
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-button:hover,
+.save-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.circle {
+  width: 50px; /* Circle diameter */
+  height: 50px; /* Circle diameter */
+  border-radius: 50%; /* Makes it a circle */
+  background-color: #007BFF; /* Circle color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+  margin: 20px auto; /* Center the circle */
+}
+
+.option-selector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.option-button {
+  background-color: #28a745; /* Button color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px 0;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.option-button:hover {
+  background-color: #218838; /* Darker shade on hover */
+}
+
+/* New styles for image display */
+.full-image-view {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Dark overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it's above everything else */
+}
+
+.full-image {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px; /* Rounded corners for the image */
+}
+
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #f44336; /* Red button for closing */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1001; /* Above the image */
+}
+.profile-image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ccc;
+}
+
+.placeholder-image {
+  width: 120px;
+  height: 120px;
+  background-color: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.image-upload {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.upload-button {
+  margin-top: 5px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

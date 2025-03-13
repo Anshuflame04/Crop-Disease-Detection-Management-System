@@ -1,0 +1,61 @@
+.options-menu {
+  position: absolute; /* Position relative to the container */
+  top: 50px; /* Adjust to where you want it to appear */
+  right: 15px; /* Align it a bit away from the right edge */
+  background-color: #ffffff; /* White background color */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  z-index: 1000; /* Ensure it's on top */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  overflow: hidden; /* Prevent overflow of elements */
+}
+
+/* Menu list styling */
+.options-menu ul {
+  list-style: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+}
+
+/* Individual menu item styling */
+.options-menu li {
+  padding: 15px 20px; /* More padding for better spacing */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-family: 'Arial', sans-serif; /* Font style */
+  font-size: 16px; /* Font size */
+  color: #333; /* Dark text color */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+/* Hover effect for menu items */
+.options-menu li:hover {
+  background-color: #f0f0f0; /* Light gray background on hover */
+  transform: translateY(-2px); /* Lift effect */
+}
+
+/* Active state styling */
+.options-menu li:active {
+  background-color: #e0e0e0; /* Darker gray for active state */
+  transform: translateY(0); /* Reset lift effect */
+}
+
+/* First child styling for rounded corners */
+.options-menu li:first-child {
+  border-top-left-radius: 10px; /* Rounded corners for the top */
+  border-top-right-radius: 10px;
+}
+
+/* Last child styling for rounded corners */
+.options-menu li:last-child {
+  border-bottom-left-radius: 10px; /* Rounded corners for the bottom */
+  border-bottom-right-radius: 10px;
+}
+
+/* Additional styling for links within the menu */
+.options-menu li a {
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Inherit color from parent */
+  display: block; /* Make the link fill the li area */
+  width: 100%; /* Full width for easier clicking */
+}

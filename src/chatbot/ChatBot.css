@@ -1,0 +1,186 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full height for the app container */
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color: #333; /* Default dark background */
+    color: white; /* Default text color */
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 8%;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+  }
+  
+  .app-name {
+    font-size: 24px;
+    margin: 0;
+    color: white;
+  }
+  
+  .header-icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .icon {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .content {
+    flex-grow: 1;
+    padding-top: 60px; /* To make space for the fixed header */
+    padding-bottom: 60px; /* To make space for the fixed footer */
+    overflow-y: auto;
+    background-color: #f5f5f5; /* Default light background for content */
+    color: #333; /* Default text color */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+  }
+  
+  /* Dark mode styles */
+  .dark .header {
+    background-color: #1a1a1a; /* Darker header background */
+  }
+  
+  .dark .content {
+    background-color: #2c2c2c; /* Darker content background */
+    color: white; /* Dark mode text color */
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333; /* Default dark background */
+    color: white; /* Default text color */
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+  }
+  
+  /* Dark mode footer styles */
+  .dark .footer {
+    background-color: #1a1a1a; /* Darker footer background */
+  }
+  
+  .footerButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white; /* Default footer button text color */
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .footerButton.active {
+    color: #4CAF50; /* Active button color */
+  }
+  
+  /* Dark mode footer button text color */
+  .dark .footerButton {
+    color: white; /* Change text color in dark mode */
+  }
+  
+  .footer-icon {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  
+  /* Additional styles for hover effects if needed */
+  .footerButton:hover {
+    color: #4CAF50; /* Change color on hover */
+  }
+  
+  .chatbot-container {
+      position: absolute; /* Keep absolute positioning for placement */
+      top: 55px; /* Position below the icons */
+      right: 50%; /* Center horizontally */
+      transform: translateX(50%); /* Adjust the positioning to center */
+      width: 350px; /* Width of the chatbot */
+      height: 56%; /* Height of the chatbot */
+      background-color: white; /* Background color */
+      border: 2px solid #4CAF50; /* Thicker border with the primary color */
+      border-radius: 8px; /* Rounded corners */
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Increased shadow for depth */
+      z-index: 1000; /* Above other elements */
+      display: flex;
+      flex-direction: column; /* Stack elements vertically */
+  }
+  
+  .chatbot-header {
+      background-color: #4CAF50; /* Header color */
+      color: white; /* Header text color */
+      padding: 15px; /* Increased padding */
+      border-radius: 8px 8px 0 0; /* Round top corners */
+      text-align: center; /* Center text */
+      border-bottom: 2px solid #388E3C; /* Subtle border under the header */
+
+  }
+  
+  .chatbot-messages {
+      flex-grow: 1; /* Allow to grow */
+      padding: 15px; /* Padding for messages */
+      overflow-y: auto; /* Scroll if overflow */
+      max-height: 75%; /* Max height for the messages */
+  }
+  
+  .chat-message {
+      margin: 8px 0; /* Margin between messages */
+      padding: 10px; /* Padding inside messages */
+      border-radius: 5px; /* Round corners */
+      max-width: 80%; /* Limit the width of messages */
+      word-wrap: break-word; /* Ensure long words wrap */
+  }
+  
+  .user-message {
+      background-color: #e1f5fe; /* User message color */
+      align-self: flex-end; /* Align user messages to the right */
+      border-radius: 8px 8px 0 8px; /* Round right corners */
+      margin-left: auto; /* Ensure margin pushes it to the right */
+  }
+  
+  .bot-message {
+      background-color: #f1f1f1; /* Bot message color */
+      align-self: flex-start; /* Align bot messages to the left */
+      border-radius: 8px 8px 0 8px; /* Round left corners */
+      margin-right: auto; /* Ensure margin pushes it to the left */
+  }
+  
+  .chatbot-input-form {
+      display: flex; /* Flex layout for input and send icon */
+      border-top: 1px solid #ccc; /* Separator line */
+      padding: 10px; /* Padding around input form */
+      border-top: 2px solid #ccc; /* Thicker separator line */
+
+  }
+  
+  .chatbot-input {
+      flex-grow: 1; /* Allow input to grow */
+      border: none; /* Remove border */
+      padding: 10px; /* Padding for input */
+      border-radius: 0 0 0 8px; /* Round bottom left corner */
+  }
+  
+  .chatbot-send-icon {
+      width: 50px; /* Width of send icon */
+      height: 50px; /* Height of send icon */
+      cursor: pointer; /* Change cursor on hover */
+      border-radius: 0 0 8px 0; /* Round bottom right corner */
+      background-color: #4CAF50; /* Background color for icon */
+      margin: 0; /* Remove margins */
+      border: 1px solid #ccc; /* Border for the send icon */
+  }
+  

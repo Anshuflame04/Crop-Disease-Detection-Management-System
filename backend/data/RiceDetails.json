@@ -1,0 +1,74 @@
+{
+    "Rice___Bacterial_Leaf_Blight": {
+        "name": "Bacterial Leaf Blight",
+        "cause": "Bacteria (Xanthomonas oryzae pv. oryzae)",
+        "prevention": "Use resistant varieties, proper irrigation practices, and crop rotation.",
+        "medicines": "Copper-based bactericides can be effective.",
+        "organic_pesticides": "Neem oil, Garlic extract, Baking soda spray.",
+        "natural_fertilizers": "Compost, Vermicompost, Bio-fertilizers (Azotobacter, Trichoderma)."
+    },
+    "Rice___Brown_Spot": {
+        "name": "Brown Spot",
+        "cause": "Fungus (Bipolaris oryzae)",
+        "prevention": "Practice crop rotation, proper fertilization, and timely harvest.",
+        "medicines": "Fungicides containing carbendazim and tricyclazole.",
+        "organic_pesticides": "Neem oil, Copper sulfate, Bordeaux mixture.",
+        "natural_fertilizers": "Compost, Manure, Mycorrhizal bio-fertilizers."
+    },
+    "Rice___Healthy": {
+        "name": "Healthy Rice",
+        "cause": "No disease present.",
+        "prevention": "Maintain healthy soil and proper care.",
+        "medicines": "N/A",
+        "organic_pesticides": "N/A",
+        "natural_fertilizers": "Compost, Cow dung manure, Bio-fertilizers."
+    },
+    "Rice___Hispa": {
+        "name": "Rice Hispa",
+        "cause": "Insect pest (Dicladispa armigera)",
+        "prevention": "Use insect-resistant varieties and apply insecticides as necessary.",
+        "medicines": "Insecticides such as imidacloprid.",
+        "organic_pesticides": "Neem oil, Chrysanthemum extract, Soap spray.",
+        "natural_fertilizers": "Vermicompost, Bone meal, Seaweed extract."
+    },
+    "Rice___Leaf_Blast": {
+        "name": "Leaf Blast",
+        "cause": "Fungus (Magnaporthe oryzae)",
+        "prevention": "Use resistant varieties and maintain good field drainage.",
+        "medicines": "Fungicides like pyraziflumid.",
+        "organic_pesticides": "Bordeaux mixture, Neem oil, Garlic extract.",
+        "natural_fertilizers": "Vermicompost, Bone meal, Phosphate-solubilizing bacteria."
+    },
+    "Rice___Leaf_scald": {
+        "name": "Leaf Scald",
+        "cause": "Bacteria (Burkholderia glumae)",
+        "prevention": "Avoid wet conditions and practice crop rotation.",
+        "medicines": "No specific treatments; management is key.",
+        "organic_pesticides": "Neem oil, Sulfur spray, Baking soda spray.",
+        "natural_fertilizers": "Seaweed fertilizer, Cow dung manure, Compost."
+    },
+    "Rice___Narrow_Brown_Leaf_Spot": {
+        "name": "Narrow Brown Leaf Spot",
+        "cause": "Fungus (Cochliobolus miyabeanus)",
+        "prevention": "Use resistant varieties and improve field drainage.",
+        "medicines": "Fungicides containing benomyl and thiophanate-methyl.",
+        "organic_pesticides": "Neem oil, Copper-based fungicides, Baking soda spray.",
+        "natural_fertilizers": "Compost, Rock phosphate, Mycorrhizal bio-fertilizers."
+    },
+    "Rice___Neck_Blast": {
+        "name": "Neck Blast",
+        "cause": "Fungus (Magnaporthe oryzae)",
+        "prevention": "Plant resistant varieties and practice proper fertilization.",
+        "medicines": "Use fungicides for control.",
+        "organic_pesticides": "Neem oil, Copper-based fungicides, Garlic extract.",
+        "natural_fertilizers": "Compost, Green manure, Bio-fertilizers (Trichoderma)."
+    },
+    "Rice___Sheath_Blight": {
+        "name": "Sheath Blight",
+        "cause": "Fungus (Rhizoctonia solani)",
+        "prevention": "Use resistant varieties and maintain proper field drainage.",
+        "medicines": "Fungicides like azoxystrobin.",
+        "organic_pesticides": "Neem oil, Chrysanthemum extract, Soap spray.",
+        "natural_fertilizers": "Compost, Vermicompost, Bio-fertilizers (Azospirillum, Phosphate-solubilizing bacteria)."
+    }
+}

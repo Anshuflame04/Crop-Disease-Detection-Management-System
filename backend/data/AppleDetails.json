@@ -1,0 +1,34 @@
+{
+  "Black_Rot": {
+      "name": "Apple Black Rot",
+      "cause": "Fungal disease caused by Diplodia seriata.",
+      "prevention": "Prune infected branches, clean fallen leaves, and apply fungicides.",
+      "medicines": "Captan, Mancozeb",
+      "organic_pesticides": "Neem oil, Bordeaux mixture, Garlic extract.",
+      "natural_fertilizers": "Compost, Bone meal, Mycorrhizal bio-fertilizers."
+  },
+  "Cedar_Rust": {
+      "name": "Cedar Apple Rust",
+      "cause": "Fungal disease caused by Gymnosporangium juniperi-virginianae.",
+      "prevention": "Remove cedar trees near apple orchards and apply fungicides.",
+      "medicines": "Tebuconazole, Propiconazole",
+      "organic_pesticides": "Neem oil, Copper-based fungicides, Sulfur spray.",
+      "natural_fertilizers": "Compost, Rock phosphate, Bio-fertilizers (Trichoderma)."
+  },
+  "Healthy": {
+      "name": "Healthy Apple",
+      "cause": "No disease.",
+      "prevention": "N/A",
+      "medicines": "N/A",
+      "organic_pesticides": "N/A",
+      "natural_fertilizers": "Compost, Cow dung manure, Bio-fertilizers."
+  },
+  "Scab": {
+      "name": "Apple Scab",
+      "cause": "Fungal disease caused by Venturia inaequalis.",
+      "prevention": "Use resistant varieties, remove infected leaves, and apply fungicides.",
+      "medicines": "Chlorothalonil, Copper-based fungicides",
+      "organic_pesticides": "Neem oil, Baking soda spray, Bordeaux mixture.",
+      "natural_fertilizers": "Vermicompost, Bone meal, Seaweed extract."
+  }
+}

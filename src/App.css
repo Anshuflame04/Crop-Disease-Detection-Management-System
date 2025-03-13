@@ -1,0 +1,67 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* Light Mode Styles */
+body.light-mode {
+  background-color: #f5f5f5;
+}
+
+body.light-mode .upload-container {
+  background-color: #fff;
+  color: #333; /* Text color for light mode */
+}
+
+.upload-box {
+  border: 2px dashed #ddd; /* Border color for light mode */
+}
+
+.upload-placeholder {
+  color: #aaa; /* Placeholder text color for light mode */
+}
+
+.submit-button {
+  background-color: #1e90ff; /* Button color for light mode */
+}
+
+.submit-button:hover {
+  background-color: #104e8b; /* Button hover color for light mode */
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212; /* Dark background */
+}
+
+body.dark-mode .upload-container {
+  background-color: #1e1e1e; /* Dark background for container */
+  color: #fff; /* Text color for dark mode */
+}
+
+body.dark-mode .upload-box {
+  border: 2px dashed #444; /* Border color for dark mode */
+}
+
+body.dark-mode .upload-placeholder {
+  color: #bbb; /* Placeholder text color for dark mode */
+}
+
+body.dark-mode .submit-button {
+  background-color: #1e90ff; /* Button color for dark mode */
+}
+
+body.dark-mode .submit-button:hover {
+  background-color: #104e8b; /* Button hover color for dark mode */
+}

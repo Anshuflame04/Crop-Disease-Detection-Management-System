@@ -1,0 +1,57 @@
+/* General container styling */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  padding: 20px;
+  background-color: #f4f4f9; /* Background color */
+  min-height: 100vh; /* Full height */
+}
+
+/* Image container styling */
+.image-container {
+  margin-top: 10px; /* Space above the image */
+  overflow: hidden; /* Hide overflow for transition effects */
+  width: 70%; /* Adjust width to fit better on screen */
+  max-width: 300px; /* Maximum width for the image container */
+}
+
+/* Image styling with transition effect */
+.centered-image {
+  width: 80%; /* Full width of the container */
+  height: 20%; /* Maintain aspect ratio */
+  border-radius: 5%; /* Rounded corners */
+  transition: transform 0.3s ease; /* Smooth transition on hover */
+  display: block; /* Make image a block element */
+  margin: 0 auto; /* Center image horizontally */
+}
+
+.centered-image:hover {
+  transform: scale(1.05); /* Scale effect on hover */
+}
+
+/* Welcome text styling */
+.welcome-text {
+  margin: 10px 0; /* Space above and below the welcome text */
+  font-size: 1.5em; /* Slightly larger font size for better visibility */
+  color: #333; /* Text color */
+  text-align: center; /* Center align text */
+}
+
+/* Benefits paragraph styling (currently commented out) */
+.benefits-paragraph {
+  margin-top: 10px; /* Space above the paragraph */
+  font-size: 1em; /* Font size */
+  color: #333; /* Text color */
+  line-height: 1.6; /* Improve readability */
+  text-align: center; /* Center align text */
+  padding: 0 5%; /* Add padding for smaller screens */
+}
+
+/* Additional styling for the CombinedWeatherSoilData cards */
+.combined-data-container {
+  display: flex; /* Flex layout for the cards */
+  justify-content: space-around; /* Space out cards evenly */
+  width: 100%; /* Full width for cards */
+  margin-top: 20px; /* Space above the cards */
+}

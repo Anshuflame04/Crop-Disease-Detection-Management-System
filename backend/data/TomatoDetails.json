@@ -1,0 +1,82 @@
+{
+    "Bacterial_Spot": {
+        "name": "Tomato Bacterial Spot",
+        "cause": "Bacterial disease caused by Xanthomonas perforans.",
+        "prevention": "Use resistant varieties, manage water levels, and apply bactericides.",
+        "medicines": "Copper-based bactericides.",
+        "organic_pesticides": "Neem oil, Garlic extract, Baking soda spray.",
+        "natural_fertilizers": "Compost, Vermicompost, Bio-fertilizers (Azotobacter, Trichoderma)."
+    },
+    "Early_Blight": {
+        "name": "Tomato Early Blight",
+        "cause": "Fungal disease caused by Alternaria solani.",
+        "prevention": "Use resistant varieties, remove infected leaves, and apply fungicides.",
+        "medicines": "Chlorothalonil, Mancozeb.",
+        "organic_pesticides": "Neem oil, Copper sulfate, Bordeaux mixture.",
+        "natural_fertilizers": "Compost, Manure, Mycorrhizal bio-fertilizers."
+    },
+    "Healthy": {
+        "name": "Healthy Tomato",
+        "cause": "No disease.",
+        "prevention": "N/A",
+        "medicines": "N/A",
+        "organic_pesticides": "N/A",
+        "natural_fertilizers": "Compost, Cow dung manure, Bio-fertilizers."
+    },
+    "Late_Blight": {
+        "name": "Tomato Late Blight",
+        "cause": "Fungal disease caused by Phytophthora infestans.",
+        "prevention": "Use resistant varieties, manage moisture levels, and apply fungicides.",
+        "medicines": "Metalaxyl, Mancozeb.",
+        "organic_pesticides": "Bordeaux mixture, Neem oil, Garlic extract.",
+        "natural_fertilizers": "Vermicompost, Bone meal, Phosphate-solubilizing bacteria."
+    },
+    "Leaf_Mold": {
+        "name": "Tomato Leaf Mold",
+        "cause": "Fungal disease caused by Passalora fulva.",
+        "prevention": "Ensure good air circulation and apply fungicides.",
+        "medicines": "Chlorothalonil, Mancozeb.",
+        "organic_pesticides": "Neem oil, Sulfur spray, Baking soda spray.",
+        "natural_fertilizers": "Seaweed fertilizer, Cow dung manure, Compost."
+    },
+    "Mosaic_Virus": {
+        "name": "Tomato Mosaic Virus",
+        "cause": "Viral disease caused by Tomato mosaic virus.",
+        "prevention": "Use virus-free seeds, control insect vectors, and remove infected plants.",
+        "medicines": "No specific medicines; manage with prevention and control measures.",
+        "organic_pesticides": "Neem oil, Garlic extract, Chrysanthemum extract.",
+        "natural_fertilizers": "Green manure, Bio-fertilizers (Rhizobium, Azospirillum)."
+    },
+    "Septoria_Leaf_Spot": {
+        "name": "Tomato Septoria Leaf Spot",
+        "cause": "Fungal disease caused by Septoria lycopersici.",
+        "prevention": "Remove infected leaves, use resistant varieties, and apply fungicides.",
+        "medicines": "Chlorothalonil, Mancozeb.",
+        "organic_pesticides": "Neem oil, Copper-based fungicides, Baking soda spray.",
+        "natural_fertilizers": "Compost, Rock phosphate, Mycorrhizal bio-fertilizers."
+    },
+    "Spider_Mites": {
+        "name": "Tomato Spider Mites (Two-spotted Spider Mite)",
+        "cause": "Pest caused by Tetranychus urticae.",
+        "prevention": "Use miticides and natural predators, maintain plant health.",
+        "medicines": "Acaricides like Abamectin, Neem oil.",
+        "organic_pesticides": "Neem oil, Chrysanthemum extract, Soap spray.",
+        "natural_fertilizers": "Vermicompost, Bone meal, Seaweed extract."
+    },
+    "Target_Spot": {
+        "name": "Tomato Target Spot",
+        "cause": "Fungal disease caused by Corynespora cassiicola.",
+        "prevention": "Remove infected plant debris, use resistant varieties, and apply fungicides.",
+        "medicines": "Triazole fungicides, Chlorothalonil.",
+        "organic_pesticides": "Neem oil, Copper-based fungicides, Garlic extract.",
+        "natural_fertilizers": "Compost, Green manure, Bio-fertilizers (Trichoderma)."
+    },
+    "Yellow_Leaf_Curl_Virus": {
+        "name": "Tomato Yellow Leaf Curl Virus",
+        "cause": "Viral disease caused by Tomato yellow leaf curl virus.",
+        "prevention": "Use resistant varieties, control whitefly vectors, and remove infected plants.",
+        "medicines": "No specific medicines; manage with prevention and control measures.",
+        "organic_pesticides": "Neem oil, Chrysanthemum extract, Soap spray.",
+        "natural_fertilizers": "Compost, Vermicompost, Bio-fertilizers (Azospirillum, Phosphate-solubilizing bacteria)."
+    }
+}

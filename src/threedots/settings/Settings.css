@@ -1,0 +1,160 @@
+/* Settings.css */
+.settings-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  padding: 20px; /* Reduced padding for smaller screens */
+  border-radius: 10px; /* Slightly rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+  transition: background-color 0.3s, color 0.3s;
+  width: 90%; /* Use a percentage width for responsiveness */
+  max-width: 87%; /* Max width for the settings page */
+  margin: 20px auto; /* Center the component on the page */
+  background-color: rgba(255, 255, 255, 0.8); /* Slightly opaque background */
+}
+
+.toggle-title {
+  display: flex;
+  align-items: center;
+  margin: 20px 0; /* Increased margin for better spacing */
+  font-size: 1.6em; /* Increased font size for better visibility */
+  color: inherit; /* Inherit text color from parent */
+}
+
+.icon {
+  margin-right: 10px; /* Slightly increased margin */
+  font-size: 1.6em; /* Increased icon size for emphasis */
+  color: #2196F3; /* Color for icons */
+  transition: transform 0.2s; /* Add transition for icon hover */
+}
+
+.icon:hover {
+  transform: scale(1.1); /* Slightly enlarge icons on hover */
+}
+
+.theme-toggle,
+.language-selection,
+.notification-settings {
+  margin-bottom: 25px; /* Increased margin for better spacing */
+  width: 100%; /* Full width for settings sections */
+  text-align: left; /* Align text to the left */
+  padding: 20px; /* Increased padding for a more spacious feel */
+  background-color: rgba(255, 255, 255, 0.1); /* Light background */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.notification-toggle {
+  display: flex;
+  align-items: center;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px; /* Consistent width */
+  height: 28px; /* Consistent height */
+  margin-right: 15px; /* Increased margin for separation */
+}
+
+.switch input {
+  opacity: 0; /* Hide original checkbox */
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc; /* Gray background */
+  transition: 0.4s;
+  border-radius: 34px; /* Rounded corners */
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 24px; /* Consistent height */
+  width: 24px; /* Consistent width */
+  left: 2px; /* Margin from the left */
+  bottom: 2px; /* Margin from the bottom */
+  background-color: white; /* White knob */
+  transition: 0.4s;
+  border-radius: 50%; /* Round knob */
+}
+
+input:checked + .slider {
+  background-color: #2196F3; /* Active toggle color */
+}
+
+input:checked + .slider:before {
+  transform: translateX(22px); /* Move knob to the right */
+}
+
+/* Add light and dark mode styles */
+.settings-page.dark {
+  background-color: #1c1c1c; /* Darker background for dark mode */
+  color: white; /* White text in dark mode */
+}
+
+.settings-page.light {
+  background-color: white; /* White background in light mode */
+  color: black; /* Black text in light mode */
+}
+
+.save-button {
+  background-color: #2196F3; /* Primary button color */
+  color: white; /* Button text color */
+  border: none;
+  padding: 12px 20px; /* More padding for comfort */
+  cursor: pointer;
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s, transform 0.2s; /* Added transform for button hover */
+  font-size: 1.2em; /* Increased font size */
+  margin-top: 20px; /* Space above button */
+  width: 100%; /* Full width for the save button */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Subtle button shadow */
+}
+
+.save-button:hover {
+  background-color: #1e88e5; /* Darker shade on hover */
+  transform: scale(1.02); /* Slightly enlarge button on hover */
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 600px) {
+  .settings-page {
+    padding: 15px; /* Less padding for smaller screens */
+    margin: 10px; /* Reduced margin for smaller screens */
+  }
+
+  .toggle-title {
+    font-size: 1.4em; /* Smaller font size on mobile */
+  }
+
+  .icon {
+    font-size: 1.4em; /* Smaller icons on mobile */
+  }
+
+  .theme-toggle,
+  .language-selection,
+  .notification-settings {
+    padding: 15px; /* Less padding for settings sections */
+  }
+
+  .switch {
+    width: 40px; /* Smaller toggle switch */
+    height: 24px; /* Smaller toggle height */
+  }
+
+  .save-button {
+    font-size: 1em; /* Smaller button font size */
+    padding: 10px; /* Less padding for the button */
+  }
+}

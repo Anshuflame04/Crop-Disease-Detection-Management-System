@@ -1,0 +1,146 @@
+/* CombinedWeatherSoilData.css */
+
+.container {
+  text-align: left; /* Align text to the left */
+  padding: 20px;
+  max-width: 600px; /* Max width for better readability */
+  margin: auto; /* Center the container */
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the background image */
+  position: relative; /* Required for absolute positioning of the pseudo-element */
+}
+
+/* Weather-specific background classes */
+.sunny {
+  background-image: url('/assets/sunny.jpg'); /* Path to sunny background image */
+}
+
+.cloudy {
+  background-image: url('/assets/rainy.jpg'); /* Path to cloudy background image */
+}
+
+.rainy {
+  background-image: url('/assets/rainy.jpg'); /* Path to rainy background image */
+}
+
+/* Pseudo-element for background blur effect */
+.container::before {
+  content: ''; /* Required for the pseudo-element */
+  position: absolute; /* Position it absolutely */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit; /* Use the background from the container */
+  filter: blur(2px); /* Apply blur effect */
+  z-index: -1; /* Place behind container content */
+}
+
+h1 {
+  color: rgba(51, 51, 51, 0.9); /* Dark text with slight transparency */
+  font-size: 28px; /* Increased font size for the title */
+  margin-bottom: 20px; /* Spacing below the title */
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7); /* Shadow for better readability */
+}
+
+.card {
+  position: relative; /* Position relative for the pseudo-element */
+  background-color: rgba(249, 249, 249, 0.9); /* Higher opacity background for better text visibility */
+  border: 1px solid rgba(204, 204, 204, 0.8); /* Subtle border */
+  border-radius: 12px; /* Increased border radius for a softer look */
+  padding: 20px; /* More padding for better spacing */
+  margin: 15px 0; /* Margin only on top and bottom */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.card::before {
+  content: ''; /* Required for the pseudo-element */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.2); /* White background with lower opacity */
+  border-radius: 12px; /* Match card's border radius */
+  z-index: -1; /* Place behind card content */
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.card h2 {
+  color: rgba(85, 85, 85, 1); /* Solid dark color for subtitles */
+  font-size: 24px; /* Font size for subtitles */
+  margin-bottom: 10px; /* Spacing below subtitle */
+}
+
+.card p {
+  color: rgba(51, 51, 51, 0.9); /* Dark text for card content */
+  font-size: 16px; /* Font size for paragraph */
+  line-height: 1.5; /* Line height for readability */
+}
+
+/* Button styling */
+button {
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px; /* Reduced padding on smaller screens */
+  }
+
+  h1 {
+    font-size: 24px; /* Smaller font size for smaller screens */
+  }
+
+  .card {
+    padding: 15px; /* Adjusted padding for smaller screens */
+  }
+
+  .card h2 {
+    font-size: 20px; /* Smaller font size for headings in cards */
+  }
+
+  .card p {
+    font-size: 14px; /* Smaller font size for paragraphs */
+  }
+
+  button {
+    font-size: 14px; /* Smaller button font size */
+    padding: 8px 12px; /* Adjusted padding for buttons */
+  }
+}
+
+.temperature-icon {
+  margin-left: 5%;
+  color: #ff5733; /* Adjust the color */
+  font-size: 1.2rem; /* Adjust size if needed */
+}
+.loading-spinner {
+  font-size: 24px;
+  color: #007bff;
+  animation: spin 1s linear infinite;
+  display: block;
+  margin: 10px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

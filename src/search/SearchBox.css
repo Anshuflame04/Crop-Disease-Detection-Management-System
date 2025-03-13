@@ -1,0 +1,35 @@
+/* SearchBox.css */
+.search-box {
+    position: relative;
+  }
+  
+  .search-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .search-popup {
+    position: fixed; /* Fixed position to ensure visibility within viewport */
+    top: 50px; /* Distance from the top of the viewport */
+    left: 2.5%; /* Slight padding on the left for centered alignment */
+    width: 95%; /* 95% of the viewport width to fit within the screen */
+    background-color: #007bff; /* Blue background color */
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    color: #333;
+    border-radius: 5px;
+  }
+

@@ -1,0 +1,124 @@
+/* Reset styles for consistent rendering */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.history-container {
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background for contrast */
+  font-family: 'Arial', sans-serif; /* Clean font for better readability */
+}
+
+.history-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between cards */
+  margin-top: 0; /* Ensure there's no margin at the top */
+}
+
+.history-card {
+  display: flex; /* Align image and details side by side */
+  border: 1px solid #ddd; /* Softer border color */
+  border-radius: 8px; /* Rounded corners for a smoother look */
+  overflow: hidden;
+  width: calc(100% - 20px); /* Adjust width as needed */
+  margin: 0; /* Ensure there's no margin on the card */
+  background-color: white; /* Card background color */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for hover effect */
+}
+
+.history-card:hover {
+  transform: translateY(-2px); /* Slight lift effect on hover */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.history-image {
+  width: 120px; /* Fixed image width */
+  height: 100px; /* Fixed image height */
+  object-fit: cover; /* Maintain aspect ratio */
+  border-right: 1px solid #ddd; /* Divider between image and details */
+}
+
+.history-details {
+  padding: 10px; /* Space around text */
+  display: flex;
+  flex-direction: column; /* Stack details vertically */
+  justify-content: space-between; /* Space out the details */
+}
+
+.history-details h4 {
+  color: #333; /* Darker text for contrast */
+  font-size: 1.1em; /* Slightly larger font size */
+  margin-bottom: 5px; /* Space below the title */
+}
+
+.history-details p {
+  color: #555; /* Softer color for description */
+  font-size: 0.9em; /* Smaller font size for details */
+}
+
+.feedback {
+  display: inline; /* Keep feedback in one line */
+  margin-right: 10px; /* Space between feedback items */
+  font-size: 0.9em; /* Slightly smaller for feedback */
+}
+
+/* Style for the feedback text */
+.feedback-icon {
+  margin-right: 5px; /* Space between icon and text */
+}
+
+/* Style for empty feedback message */
+.no-feedback {
+  font-style: italic; /* Italicize to differentiate */
+  color: #999; /* Light gray for empty feedback */
+}
+
+.history-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.history-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.history-card {
+  width: 250px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+}
+
+.history-card:hover {
+  transform: scale(1.05);
+}
+
+.history-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.history-details {
+  padding: 10px;
+  text-align: left;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}

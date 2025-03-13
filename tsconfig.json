@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+      "target": "esnext",
+      "module": "esnext",
+      "jsx": "react-jsx", // For React 17 and above
+      "strict": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true, // Ignore type checking for declaration files
+      "forceConsistentCasingInFileNames": true
+    },
+    "include": ["src/**/*"] // Adjust based on your folder structure
+  }
+  
